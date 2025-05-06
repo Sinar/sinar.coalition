@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="sinar.coalition.AddMembership"
+        title="sinar.coalition: Add Membership"
+    />
+
+
+    <permission
         id="sinar.coalition.AddCoalition"
         title="sinar.coalition: Add Coalition"
     />

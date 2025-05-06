@@ -79,7 +79,7 @@ and then running ``bin/buildout``
 Authors
 -------
 
-Provided by awesome people ;)
+ - Khairil Yusof <khairil.yusof@sinarproject.org>
 
 
 Contributors

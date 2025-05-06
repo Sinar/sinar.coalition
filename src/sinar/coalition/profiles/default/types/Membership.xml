@@ -1,38 +1,37 @@
 <?xml version="1.0"?>
 <object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-    name="Coalition"
+    name="Membership"
     meta_type="Dexterity FTI"
     i18n:domain="sinar.coalition">
 
   <!-- Basic properties -->
   <property
       i18n:translate=""
-      name="title">Coalition</property>
+      name="title">Membership</property>
   <property
       i18n:translate=""
-      name="description">Coalition containing</property>
+      name="description">Membershpi of Organizations in Coalition</property>
 
   <property name="allow_discussion">False</property>
-  <property name="factory">Coalition</property>
+  <property name="factory">Membership</property>
   <property name="icon_expr">string:puzzle</property>
   <property name="link_target"></property>
 
   <!-- Hierarchy control -->
-  <property name="global_allow">True</property>
+  <property name="global_allow">False</property>
   <property name="filter_content_types">True</property>
   <property name="allowed_content_types">
-    <element value="Membership" />
-      <!--
+  <!--
     <element value="Document" />
     <element value="File" />
   -->
   </property>
   <!-- Schema, class and security -->
-  <property name="add_permission">sinar.coalition.AddCoalition</property>
-  <property name="klass">sinar.coalition.content.coalition.Coalition</property>
+  <property name="add_permission">sinar.coalition.AddMembership</property>
+  <property name="klass">sinar.coalition.content.membership.Membership</property>
   <property name="model_file"></property>
   <property name="model_source"></property>
-  <property name="schema">sinar.coalition.content.coalition.ICoalition</property>
+  <property name="schema">sinar.coalition.content.membership.IMembership</property>
 
   <!-- Enabled behaviors -->
   <property name="behaviors" purge="false">
@@ -61,7 +60,7 @@
   </property>
 
   <!-- View information -->
-  <property name="add_view_expr">string:${folder_url}/++add++Coalition</property>
+  <property name="add_view_expr">string:${folder_url}/++add++Membership</property>
   <property name="default_view">view</property>
   <property name="default_view_fallback">False</property>
   <property name="immediate_view">view</property>
