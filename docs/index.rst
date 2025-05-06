@@ -1,0 +1,5 @@
+===============
+sinar.coalition
+===============
+
+User documentation
